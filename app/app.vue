@@ -786,6 +786,11 @@ body {
     height: 90px;
   }
 
+  .pokemon-image::before {
+    width: 100px;
+    height: 100px;
+  }
+
   .card-content h3 {
     font-size: 1.3rem;
   }
