@@ -591,7 +591,7 @@ body {
 /* Search Styles */
 .search-container {
   position: relative;
-  width: 300px;
+  width: 250px;
   display: flex;
   align-items: center;
 }
