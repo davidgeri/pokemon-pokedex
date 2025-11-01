@@ -482,7 +482,7 @@ body {
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -513,11 +513,13 @@ body {
 }
 
 .header {
-  padding: 20px 60px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -1123,6 +1125,36 @@ body {
     top: 20px;
     right: 20px;
   }
+
+  .pagination {
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 0 15px 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination-btn {
+    width: auto;
+    max-width: 140px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    margin: 0 20px;
+  }
+
+  .page-numbers {
+    justify-content: center;
+    gap: 8px;
+    order: 0; /* Page numbers in the middle */
+  }
+
+  .pagination-btn:first-of-type {
+    order: -1; /* Previous button on top */
+  }
+
+  .pagination-btn:last-of-type {
+    order: 1; /* Next button on bottom */
+  }
 }
 
 @media (max-width: 400px) {
@@ -1152,6 +1184,22 @@ body {
     font-size: 26px;
     top: 15px;
     right: 15px;
+  }
+
+  .pagination {
+    gap: 8px;
+    margin: 25px 0 10px 0;
+  }
+
+  .pagination-btn {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .page-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 0.85rem;
   }
 }
 
